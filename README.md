@@ -1,109 +1,103 @@
-# 🎬 Netflix Clone – Movie Browser App
+# 🎬 Netflix Clone
 
-A sleek and responsive movie browsing application inspired by Netflix, built using **React**, **Vite**, and **The Movie Database (TMDB) API**. It showcases dynamic movie sections like _Now Playing_, _Popular_, _Top Picks_, and more — complete with horizontal scrolling, image previews, and category-based API fetching.
-
----
-
-## 🚀 Features
-
-- 🔥 **Dynamic Movie Sections** – Fetches real-time data from TMDB for categories like:
-  - Now Playing
-  - Popular
-  - Top Rated
-  - Upcoming
-- 🖼️ **Backdrop Previews** – Displays movie posters with hover effects and titles.
-- 🧭 **Horizontal Scroll Navigation** – Smooth scroll with mouse wheel support.
-- ⚡ **Fast Development Setup** – Powered by Vite for instant reloads and optimized builds.
-- 📁 **Modular Folder Structure** – Clean separation of components, assets, and API logic.
-- 📱 **Responsive Design** – Fully mobile and tablet compatible with adaptive layout and touch-friendly scrolling.
+A responsive **Netflix-inspired application** built with **React** and **TailwindCSS**, featuring dynamic movie cards, trailers, and API integration with **TMDb**.  
+Deployed on **Netlify** → [Live Demo](https://netflixclonel.netlify.app/)
 
 ---
 
-🔐 Authentication
-This project uses Firebase Authentication to manage user login and signup securely.
-✨ Features
-• 	New user signup with email and password
-• 	Existing user login with email and password
-• 	Real-time auth state monitoring using 
-• 	Automatic redirect:
-• 	✅ Logged-in users are redirected to the homepage ()
-• 	🚪 Logged-out users are redirected to the login page ()
-• 	Sign out functionality available in both desktop and mobile nav
+## 🔖 Tech Badges
 
-
-
-## 📦 Tech Stack
-
-| Technology   | Purpose                      |
-| ------------ | ---------------------------- |
-| React        | UI and component logic       |
-| Vite         | Fast bundling and dev server |
-| TMDB API     | Movie data source            |
-| Tailwind CSS | Styling and layout           |
-| JavaScript   | Core logic and interactivity |
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Responsive%20Design-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TMDb API](https://img.shields.io/badge/API-TMDb-01D277?style=for-the-badge&logo=themoviedatabase&logoColor=white)
+![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![GitHub](https://img.shields.io/badge/Version%20Control-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ---
 
-## 🛠️ Setup Instructions
+## ✨ Features
+- 🎥 **Dynamic Movie Cards** fetched from TMDb API  
+- ▶️ **Trailer Playback** when selecting a movie card  
+- 📱 **Responsive Layouts** for mobile, tablet, and desktop  
+- 🎨 Styled with **TailwindCSS** utilities for modern UI  
+- ⚡ Built with **React functional components + hooks**  
 
-### 1. Clone the Repository
+---
+
+## 🛠 Tech Stack
+- **Frontend:** React, TailwindCSS, JavaScript  
+- **API:** TMDb (The Movie Database)  
+- **Deployment:** Netlify  
+- **Version Control:** Git + GitHub  
+
+---
+
+## 📸 Screenshots
+<table>
+  <tr>
+    <td>
+      <img width="600" alt="Homepage Screenshot" src="https://github.com/user-attachments/assets/bd2aea79-fcc8-4c22-8d3c-04c5933b5207" />
+    </td>
+    <td>
+      <img width="600" alt="Movie Rows Screenshot" src="https://github.com/user-attachments/assets/d1fb78f8-abc8-4972-a6c6-bfcb6b949171" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img width="600" alt="Trailer Modal Screenshot" src="https://github.com/user-attachments/assets/a43ff019-32e6-466d-88da-a916d79db9fb" />
+    </td>
+    <td>
+      <img width="600" alt="Movie Details Screenshot" src="https://github.com/user-attachments/assets/7f722abc-5899-4179-9b36-d5af4de81abf" />
+    </td>
+  </tr>
+</table>
+
+
+
+---
+
+## 📖 What I Learned
+- How to integrate external APIs into React apps  
+- Handling dynamic state and rendering API data  
+- Responsive design principles with TailwindCSS  
+- Deploying projects with Netlify  
+
+---
+
+## ⚠️ Notes
+- This project uses the **TMDb API** to fetch movie data and trailers.  
+- In some regions, the API requests may fail without a VPN.  
+- If data does not load, please enable a VPN connection before testing the app.  
+
+---
+
+## 🚀 Getting Started
+
+Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/netflix-clone.git
-cd netflix-clone
-```
-
-2. Install Dependencies
-
-```bash
+git clone https://github.com/lalman-dev/NetflixClone-react-tailwind.git
+cd NetflixClone-react-tailwind
 npm install
-```
-
-3. Run the Development Server
-
-```bash
 npm run dev
 ```
+📈 Future Improvements
+🔍 Add search functionality for movies/shows
 
-Visit http://localhost:5173 in your browser.
+📑 Implement user authentication and watchlist
 
-🔐 API Configuration
-This project uses a hardcoded TMDB bearer token for simplicity. If you want to switch to environment variables:
+🌙 Add dark mode toggle
 
-- Create a .env file in the root:
-  VITE_TMDB_TOKEN=your_token_here
+🗂 Improve state management with Redux
 
-- Update your fetch headers:
-  Authorization: `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`
+📬 Contact
+📧 Email: lalman.dev7@gmail.com
 
-
-Then restart the dev server:
-npm run dev
+💼 LinkedIn: https://www.linkedin.com/in/lalman-dev
 
-📁 Folder Structure
-src/
-├── assets/ # Static assets like Cards_data.js
-├── components/ # Reusable UI components (e.g., TitleCards.jsx)
-├── cards/ # Optional card logic or data
-├── App.jsx # Main app layout
-├── main.jsx # Entry point
-public/ # Static files
+🐦 Twitter: @imchaudhary2
 
-
+🌐 Portfolio: lalman-rho.vercel.app
 
-🧹 Recent Changes
-
-- ✅ Moved Cards_data.js from /public to /src/assets
-- ✅ Fixed API response handling with cleanup in useEffect
-- ✅ Added fallback for missing images
-- ✅ Improved scroll behavior with conditional event listener
-- ✅ Verified full mobile and tablet compatibility
-
-⚠️ TMDB API Access Note
-
-✅ Workaround
-• 	Enable a VPN on your computer to ensure successful API requests.
-• 	Once connected, the TMDB site and API should load normally and return expected data.
-🧪 Observed Behavior
-• 	✅ Mobile devices (same network): API works without VPN
-• 	❌ Desktop devices (same network): API fails unless VPN is active
+⭐️ From Lalman
