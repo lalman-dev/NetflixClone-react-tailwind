@@ -56,7 +56,7 @@ export const Navbar = () => {
               alt="Search"
             />
           </button>
-          <p className="cursor-pointer">Children</p>
+          <p className="cursor-pointer">Lalman</p>
           <button aria-label="Notifications">
             <img
               className="w-5 cursor-pointer"
@@ -116,7 +116,7 @@ export const Navbar = () => {
             <img className="w-5" src={search_icon} alt="search" />
             Search
           </li>
-          <li>Children</li>
+          <li>Lalman</li>
           <li className="flex items-center gap-2">
             <img className="w-5" src={bell_icon} alt="bell" />
             Notifications
