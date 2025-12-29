@@ -1,7 +1,7 @@
 # 🎬 Netflix Clone
 
 A responsive **Netflix-inspired application** built with **React** and **TailwindCSS**, featuring dynamic movie cards, trailers, and API integration with **TMDb**.  
-Deployed on **Netlify** → [Live Demo](https://netflixclonel.netlify.app/)
+Deployed on **Netlify** → [Live Demo](https://netfliaxapp.netlify.app/)
 
 ---
 
